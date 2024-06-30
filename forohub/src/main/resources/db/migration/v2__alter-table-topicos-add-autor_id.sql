@@ -1,0 +1,1 @@
+alter table topicos add autor_id bigint not null;

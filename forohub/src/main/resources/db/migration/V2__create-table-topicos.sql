@@ -5,7 +5,9 @@ create table topicos(
     mensaje varchar(100) not null,
     fecha_creacion date not null,
     status varchar(100) not null,
+    autor_id bigint NOT NULL,
 
-    primary key(id)
+    primary key (id),
+    foreign key (autor_id) references usuarios(id)
 
 );

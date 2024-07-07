@@ -6,9 +6,9 @@ import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 
-public record DatosTopico(
+public record DatosRegistroTopico(
         @NotNull
-        Long id,
+        Long autorId,
         @NotBlank
         String titulo,
         @NotBlank
@@ -16,11 +16,6 @@ public record DatosTopico(
         @NotNull
         LocalDate fechaCreacion,
         @NotNull
-        Boolean status,
-        @NotNull
-        Usuario autor // El autor del topico es un tipo Usuario
-        //Curso curso,
-        //List<Respuesta> respuestas
-
-        ) {
+        Boolean status
+) {
 }
